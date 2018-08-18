@@ -11,7 +11,7 @@ This project was forked from kevineye/docker-shairport-sync and adapted to run o
 ## Build
 
 ```
-docker build -t protenhan/shairport-sync:3.1.3 .
+docker build -t cloudgenius/shairport .
 ```
 
 ## Run
@@ -21,8 +21,8 @@ docker run -d \
     --name shairport \
     --net host \
     --device /dev/snd \
-    -e AIRPLAY_NAME=Docker \
-    protenhan/shairport-sync:3.1.3
+    -e AIRPLAY_NAME=pi \
+    cloudgenius/shairport
 ```
 
 ### Parameters
@@ -44,7 +44,7 @@ docker run -d \
     --device /dev/snd \
     -e AIRPLAY_NAME=Docker \
     -v /some/pipe:/output \
-    kevineye/shairport-sync \
+    cloudgenius/shairport \
         -o pipe \
         -- /output
 ```
