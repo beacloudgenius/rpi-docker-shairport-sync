@@ -1,0 +1,12 @@
+version: '3'
+services:
+  airport:
+    image: cloudgenius/shairport
+    restart: always
+    network_mode: host
+    devices: 
+      - /dev/snd
+    environment:
+      - AIRPLAY_NAME=pi
+      - PGID=1000
+      - PUID=1000
