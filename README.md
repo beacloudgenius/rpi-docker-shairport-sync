@@ -25,6 +25,12 @@ docker run -d \
     cloudgenius/shairport
 ```
 
+## Run using docker-compose.yaml
+
+```
+docker-compose up -d
+```
+
 ### Parameters
 
 * `--net host` must be run in host mode
